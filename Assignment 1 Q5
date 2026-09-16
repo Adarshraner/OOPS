@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+
+class student
+{
+	private:
+	int rollno;
+	int age;
+	string name;
+	string branch;
+	
+	
+	public:
+	student(int rollno,int age,string name,string branch)
+	{
+		this->rollno=rollno;
+		this->age=age;
+		this->name=name;
+		this->branch=branch;
+	}
+	void display()
+	{
+		cout<<"Student Name:"<<name<<endl;
+		cout<<"Age:"<<age<<endl;
+		cout<<"Roll No:"<<rollno<<endl;
+		cout<<"Branch:"<<branch<<endl;
+	}
+};
+
+int main()
+{
+	student s1(18,19,"Adarsh","AIML");
+	
+	s1.display();
+	return 0;
+}
