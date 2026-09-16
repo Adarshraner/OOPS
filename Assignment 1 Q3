@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+
+class Empolyee
+{
+	public:
+	int eno;
+	char dep;
+	float sal;
+	
+	void empolyee()
+	{
+		cout<<"Enter Empolyee Number:";
+		cin>>eno;
+		
+		cout<<"Enter Department:";
+		cin>>dep;
+		
+		cout<<"Enter Salary:";
+		cin>>sal;
+	}
+	void display()
+	{
+		cout<<"=====Empolyee Details====="<<endl;
+		cout<<"Empolyee Number:"<<eno<<endl;
+		cout<<"Department:"<<dep<<endl;
+		cout<<"Salary:"<<sal<<endl;
+	}
+};
+
+int main()
+{
+		Empolyee e1;
+		
+		e1.empolyee();
+		e1.display();
+		
+		return 0;
+}
