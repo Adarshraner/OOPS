@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+class Book
+{
+    int id;
+    string title;
+    float price;
+
+public:
+    void input()
+    {
+        cout << "Enter Book ID: ";
+        cin >> id;
+
+        cout << "Enter Book Title: ";
+        cin >> title;
+
+        cout << "Enter Book Price: ";
+        cin >> price;
+    }
+
+    void display()
+    {
+        cout << "\nBook ID: " << id;
+        cout << "\nBook Title: " << title;
+        cout << "\nBook Price: " << price;
+    }
+};
+
+int main()
+{
+    Book b;
+
+    b.input();
+    b.display();
+
+    return 0;
+}
